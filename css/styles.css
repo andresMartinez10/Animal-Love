@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --primary-color : #2A96AD;
+  --secundary-color: #6100FF;
+  --terciary-color: #FFFFFF;
+  --titulos: 40px;
+  --parrafos: 20px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,p, input, a, ul, li{
+  font-family: 'Mulish', sans-serif;
+}
+
+header{
+  position: relative;
+  width: 100%;
+  background: url("../img/bg-header.png");
+  background-size: cover;
+}
+
+header img{
+  width: 300px;
+  height: 98px;
+}
+
+header nav{
+  background: linear-gradient(#2A96AD, #ffffff00);
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fila{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  border-radius: 60px;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 5px 13px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+nav ul li:hover{
+  background: var(--primary-color);
+  transition: 2s;
+}
+
+ul li a{
+  text-decoration: none;
+  font-weight: 700;
+  transition: 1s;
+  padding: 5px;
+  color: #000000;
+}
+
+ul li a:hover{
+  color: rgb(214, 201, 21);
+}
+
+header #hero{
+  width: 100%;
+  padding: 140px 0 190px;
+}
+
+#hero h1{
+  color: #258196;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 750;
+}
+
+#hero h2{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+
+}
+#hero p{
+  color: black;
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding-right: 50px;
+}
+
+#hero .btn-primary{
+  color: #000000;
+  padding: 15px;
+  border-radius: 30px;
+  background: #2A96AD;
+  border-style: groove;
+  border: 0px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+#hero .btn-primary:hover{
+  color: #FFFFFF;
+  background: #6100FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+main section{
+  background: #258196;
+}
+
+main div .collage img{
+  height: 300px;
+  margin: 40px 20px 40px 0;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  border-radius: 90px;
+}
+
+main div .collage img:hover{
+  scale: 1.1;
+  transition: 2s;
+}
+
+main div h2{
+  padding-bottom: 40px;
+}
+
+div .text{
+  padding: 20px;
+  align-items: center;
+}
+
+div #servicios {
+  color: #000000;
+  position: relative;
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.container2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30PX;
+  margin-bottom: 60px;
+}
+
+.container2 .card{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #258196;
+  margin: 30px 5px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.container2 .card:hover{
+  height: 420px;
+}
+
+.container2 .card .imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+}
+
+.container2 .card .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container2 .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container2 .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -120px;
+  transition-delay: 0.3s;
+}
+
+#contacto{
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 120px;
+  background: #131212 ;
+}
+
+#contacto h2{
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+#contacto form{
+  width: 50%;
+  margin:  0 auto;
+}
+
+#contacto p{
+  font-size: var(--parrafos);
+  margin-bottom: 40px;
+}
+
+#contacto form .fila{
+  display: flex ;
+
+}
+
+form .fila input{
+  width: 50%;
+  padding: 8px 12px;
+  font-size: var(--parrafos);
+  margin: 10px 20px;
+}
+form .fila select{
+  width: 50%;
+  padding: 8px 12px;
+  font-size: var(--parrafos);
+  margin: 10px 20px;
+}
+form button{
+  background-color: #aeae06;
+  color:#fff;
+  margin-top: 40px;
+  padding: 12px 20px;
+  font-size: 22px;
+  border-radius: 4px;
+  border: transparent;
+}
